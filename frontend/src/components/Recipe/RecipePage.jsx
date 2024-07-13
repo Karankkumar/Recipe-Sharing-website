@@ -11,7 +11,7 @@ const RecipePage = () => {
 
   useEffect(() => {
     const fetchHandler = async () => {
-      await axios.get(`http://localhost:5000/recipes/${id}`)
+      await axios.get(`https://recipesharing-dqqq.onrender.com/recipes/${id}`)
         .then((res) => setInputs(res.data.recipe));
     }
 

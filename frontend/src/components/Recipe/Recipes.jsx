@@ -4,7 +4,7 @@ import Recipe from './Recipe';
 import { TextField, Box } from '@mui/material';
 import "./recipe.css";
 
-const URL = "http://localhost:5000/recipes";
+const URL = "https://recipesharing-dqqq.onrender.com/recipes";
 
 const fetchHandler = async () => {
   return await axios.get(URL).then((res) => res.data);

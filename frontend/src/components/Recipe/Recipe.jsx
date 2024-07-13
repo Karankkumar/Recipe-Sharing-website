@@ -20,7 +20,7 @@ const Recipe = (props) => {
 
   const deleteRecipe = async () => {
     await axios
-      .delete(`http://localhost:5000/recipes/${_id}`)
+      .delete(`https://recipesharing-dqqq.onrender.com/recipes/${_id}`)
       .then((res) => res.data)
       .then(() => history("/"))
       .then(() => { history("/recipes") });

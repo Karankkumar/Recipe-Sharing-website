@@ -50,7 +50,7 @@ const AddRecipe = () => {
 
   // fuction to sendrequest to database to add the new recipe stored in inputs state.
   const sendRequest = async () => {
-    await axios.post('http://localhost:5000/recipes',{
+    await axios.post('https://recipesharing-dqqq.onrender.com/recipes',{
       name: String(inputs.name),
       author: String(inputs.author),
       description: String(inputs.description),
