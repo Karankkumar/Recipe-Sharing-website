@@ -50,7 +50,7 @@ const RecipeDetails = () => {
 
   const sendRequest = async () => {
     await axios
-      .put(`http://localhost:5000/recipes/${id}`, {
+      .put(`https://recipesharing-dqqq.onrender.com/recipes/${id}`, {
         name: String(inputs.name),
         author: String(inputs.author),
         description: String(inputs.description),
