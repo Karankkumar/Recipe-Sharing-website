@@ -33,13 +33,19 @@ const RecipeDetails = () => {
   // }, [data]); // Log data whenever it updates
 
   const addStep = () => {
-    setrecipeSteps([...recipeSteps, Step]);
+    setRecipeSteps([...recipeSteps, Step]);
     setStep("");
   };
 
   const deleteItem = (index) => {
-    setrecipeSteps(recipeSteps.filter((_, i) => i !== index));
+    setRecipeSteps(recipeSteps.filter((_, i) => i !== index));
+    window.location.reload();
+
+    // const updatedSteps = recipeSteps.filter((_, i) => i !== index);
+    // setRecipeSteps(updatedSteps); 
   };
+
+  
 
   // when any fieid of inputs state changes,update the input states
   const handleinputChange = (e) => {
